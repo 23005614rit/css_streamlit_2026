@@ -48,7 +48,7 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     
     st.image(
-"https://www.motortrend.com/uploads/2022/11/001-drag-week-2022-street-race-big-block-na-darren-ambro-1980-malibu.jpg,caption="Nature (Pixabay)"
+"https://www.motortrend.com/uploads/2022/11/001-drag-week-2022-street-race-big-block-na-darren-ambro-1980-malibu.jpg" ,caption="Nature (Pixabay)"
 )
 
 elif menu == "Publications":
@@ -133,4 +133,5 @@ elif menu == "Contact":
     email = "jane.doe@example.com"
 
     st.write(f"You can reach me at {email}.")
+
 
