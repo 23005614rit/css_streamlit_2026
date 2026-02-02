@@ -3,33 +3,33 @@ import pandas as pd
 import numpy as np
 
 # Set page title
-st.set_page_config(page_title="racing and luxury newsletter", layout="wide")
+st.set_page_config(page_title="Researcher Profile and STEM Data Explorer", layout="wide")
 
 # Sidebar Menu
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio(
     "Go to:",
-    ["Researcher Profile", "Publications", "RACING ", "Contact"],
+    ["Researcher Profile", "Publications", "STEM Data Explorer", "Contact"],
 )
 
 # Dummy STEM data
-offroad_data = pd.DataFrame({
-    "Experiment": ["Sahara", "rocks", "mountain drifts"],
-    "Power (MeV)": [5.9,4.3, 9.8],
-    "Date": pd.date_range(start="2025-10-08", periods=5),
+physics_data = pd.DataFrame({
+    "Experiment": ["Alpha Decay", "Beta Decay", "Gamma Ray Analysis", "Quark Study", "Higgs Boson"],
+    "Energy (MeV)": [4.2, 1.5, 2.9, 3.4, 7.1],
+    "Date": pd.date_range(start="2024-01-01", periods=5),
 })
 
-Countryside_data = pd.DataFrame({
-    "Wetlands Objects": ["Mud",],
+astronomy_data = pd.DataFrame({
+    "Celestial Object": ["Mars", "Venus", "Jupiter", "Saturn", "Moon"],
     "Brightness (Magnitude)": [-2.0, -4.6, -1.8, 0.2, -12.7],
-    "Observation Date": pd.date_range(start="2025-10-08", periods=5),
+    "Observation Date": pd.date_range(start="2024-01-01", periods=5),
 })
 
-Engine_data = pd.DataFrame({
-    "Type": ["Toyota V8", "Honda V6",],
-    "Temperature (°C)": [25, 10,],
-    "Power (hp)": [651, 710,],
-    "Recorded Date": pd.date_range(start="2025-10-08", periods=5),
+weather_data = pd.DataFrame({
+    "City": ["Cape Town", "London", "New York", "Tokyo", "Sydney"],
+    "Temperature (°C)": [25, 10, -3, 15, 30],
+    "Humidity (%)": [65, 70, 55, 80, 50],
+    "Recorded Date": pd.date_range(start="2024-01-01", periods=5),
 })
 
 # Sections based on menu selection
@@ -38,9 +38,9 @@ if menu == "Researcher Profile":
     st.sidebar.header("Profile Options")
 
     # Collect basic information
-    name = "kgalemo mukhovhi"
-    field = "Racing"
-    institution = "ultimate racing club"
+    name = "Dr. Jane Doe"
+    field = "Astrophysics"
+    institution = "University of Science"
 
     # Display basic profile information
     st.write(f"**Name:** {name}")
@@ -48,7 +48,8 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     
     st.image(
-"https://www.motortrend.com/uploads/2022/11/001-drag-week-2022-street-race-big-block-na-darren-ambro-1980-malibu.jpg" ,caption="Nature (Pixabay)"
+    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    caption="Nature (Pixabay)"
 )
 
 elif menu == "Publications":
@@ -130,9 +131,5 @@ elif menu == "STEM Data Explorer":
 elif menu == "Contact":
     # Add a contact section
     st.header("Contact Information")
-    email = "kgalemo@racesa.com"
-
-    st.write(f"reach out to me at {email}.")
-
-
-
+    email = "jane.doe@example.com"
+    st.write(f"You can reach me at {email}.")
