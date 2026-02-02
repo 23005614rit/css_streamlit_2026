@@ -3,33 +3,33 @@ import pandas as pd
 import numpy as np
 
 # Set page title
-st.set_page_config(page_title="Researcher Profile and STEM Data Explorer", layout="wide")
+st.set_page_config(page_title="racing and luxury newsletter", layout="wide")
 
 # Sidebar Menu
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio(
     "Go to:",
-    ["Researcher Profile", "Publications", "STEM Data Explorer", "Contact"],
+    ["Researcher Profile", "Publications", "RACING ", "Contact"],
 )
 
 # Dummy STEM data
-physics_data = pd.DataFrame({
-    "Experiment": ["Alpha Decay", "Beta Decay", "Gamma Ray Analysis", "Quark Study", "Higgs Boson"],
-    "Energy (MeV)": [4.2, 1.5, 2.9, 3.4, 7.1],
-    "Date": pd.date_range(start="2024-01-01", periods=5),
+offroad_data = pd.DataFrame({
+    "Experiment": ["Sahara", "rocks", "mountain drifts"],
+    "Power (MeV)": [5.9,4.3, 9.8],
+    "Date": pd.date_range(start="2025-10-08", periods=5),
 })
 
-astronomy_data = pd.DataFrame({
-    "Celestial Object": ["Mars", "Venus", "Jupiter", "Saturn", "Moon"],
+Countryside_data = pd.DataFrame({
+    "Wetlands Objects": ["Mud",],
     "Brightness (Magnitude)": [-2.0, -4.6, -1.8, 0.2, -12.7],
-    "Observation Date": pd.date_range(start="2024-01-01", periods=5),
+    "Observation Date": pd.date_range(start="2025-10-08", periods=5),
 })
 
-weather_data = pd.DataFrame({
-    "City": ["Cape Town", "London", "New York", "Tokyo", "Sydney"],
-    "Temperature (°C)": [25, 10, -3, 15, 30],
-    "Humidity (%)": [65, 70, 55, 80, 50],
-    "Recorded Date": pd.date_range(start="2024-01-01", periods=5),
+Engine_data = pd.DataFrame({
+    "Type": ["Toyota V8", "Honda V6",],
+    "Temperature (°C)": [25, 10,],
+    "Power (hp)": [651, 710,],
+    "Recorded Date": pd.date_range(start="2025-10-08", periods=5),
 })
 
 # Sections based on menu selection
@@ -130,8 +130,9 @@ elif menu == "STEM Data Explorer":
 elif menu == "Contact":
     # Add a contact section
     st.header("Contact Information")
-    email = "jane.doe@example.com"
+    email = "kgalemo@racesa.com"
 
-    st.write(f"You can reach me at {email}.")
+    st.write(f"reach out to me at {email}.")
+
 
 
