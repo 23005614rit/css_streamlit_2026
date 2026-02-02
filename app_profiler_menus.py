@@ -38,9 +38,9 @@ if menu == "Researcher Profile":
     st.sidebar.header("Profile Options")
 
     # Collect basic information
-    name = "Dr. Jane Doe"
-    field = "Astrophysics"
-    institution = "University of Science"
+    name = "kgalemo mukhovhi"
+    field = "Racing"
+    institution = "ultimate racing club"
 
     # Display basic profile information
     st.write(f"**Name:** {name}")
@@ -48,8 +48,7 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     
     st.image(
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    caption="Nature (Pixabay)"
+"https://www.motortrend.com/uploads/2022/11/001-drag-week-2022-street-race-big-block-na-darren-ambro-1980-malibu.jpg"    caption="Nature (Pixabay)"
 )
 
 elif menu == "Publications":
@@ -132,4 +131,5 @@ elif menu == "Contact":
     # Add a contact section
     st.header("Contact Information")
     email = "jane.doe@example.com"
+
     st.write(f"You can reach me at {email}.")
