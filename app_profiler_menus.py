@@ -47,7 +47,7 @@ if menu == "Researcher Profile":
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
     
-    st.image("https://share.google/wnKWE0KavBmSKUUdC"
+    st.image("https://share.google/wnKWE0KavBmSKUUdC",
     caption="Nature (Pixabay)")
 
 elif menu == "Publications":
@@ -132,5 +132,6 @@ elif menu == "Contact":
     email = "jane.doe@example.com"
 
     st.write(f"You can reach me at {email}.")
+
 
 
