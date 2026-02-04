@@ -47,7 +47,7 @@ if menu == "Researcher Profile":
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
     
-    st.image("https://www.motorsport.co.za/wp-content/uploads/2024/03/Extreme_Supercars_by_Dunlop-1080x675.jpg",
+    st.image("https://www.motorsportmedia.co.za/imgrz/Content_Media_Details/medFile/medID/31230/1024.jpg",
     caption="Nature (Pixabay)")
 
 elif menu == "Publications":
@@ -132,6 +132,7 @@ elif menu == "Contact":
     email = "jane.doe@example.com"
 
     st.write(f"You can reach me at {email}.")
+
 
 
 
